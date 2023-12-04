@@ -1,4 +1,24 @@
+// Fonts
+
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+// Variables
+
+$main-pink: #c6538c;
+$secondary-pink: #ffaced;
+
+$main-blue: #0006b0;
+$secondary-blue: #6392ff;
+
+$main-green: #29b000;
+$secondary-green: #63ff92;
+
+$pink-img: url(./img/a1.jpg);
+$blue-img: url(./img/a2.jpg);
+$green-img: url(./img/a3.jpg);
+$purple-img: url(./img/a4.jpg);
+
+// Styles
 
 * {
     margin: 0;
@@ -8,8 +28,16 @@
 }
 
 body {
-    background-color: #c9d66f;
-    background: linear-gradient(to right, #e2e2e2, #c9d6ff);
+    // Solid color background 
+        // background-color: #c9d66f;
+        // background: linear-gradient(to right, #e2e2e2, #c9d6ff);
+        
+    // Backgorund with image
+    background: $blue-img no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -18,7 +46,11 @@ body {
 }
 
 .container {
-    background-color: #fff;
+    // Solid color background 
+        // background-color: #fff;
+
+    // Backgorund with image
+    background: rgba(226, 226, 226, 0.7);
     border-radius: 30px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
     position: relative;
@@ -47,7 +79,7 @@ body {
 }
 
 .container button {
-    background-color: #512da8;
+    background-color: $main-blue;
     color: #fff;
     font-size: 12px;
     padding: 10px 45px;
@@ -66,7 +98,8 @@ body {
 }
 
 .container form {
-    background-color: #fff;
+    // Solid color background 
+    // background-color: #fff;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -133,7 +166,7 @@ body {
 }
 
 .social-icons a{
-    border: 1px solid #ccc;
+    border: 1px solid $main-blue;
     border-radius: 20%;
     display: inline-flex;
     justify-content: center;
@@ -161,9 +194,9 @@ body {
 }
 
 .toggle{
-    background-color: #512da8;
+    background-color: $main-blue;
     height: 100%;
-    background: linear-gradient(to right, #5c6bc0, #512da8);
+    background: linear-gradient(to right, $secondary-blue, $main-blue);
     color: #fff;
     position: relative;
     left: -100%;
@@ -207,4 +240,10 @@ body {
 
 .container.active .toggle-right{
     transform: translateX(200%);
+}
+
+.form-container.hidden {
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.6s ease-in-out;
 }

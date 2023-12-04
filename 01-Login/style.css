@@ -7,8 +7,8 @@
 }
 
 body {
-  background-color: #c9d66f;
-  background: linear-gradient(to right, #e2e2e2, #c9d6ff);
+  background: url(./img/a2.jpg) no-repeat center center fixed;
+  background-size: cover;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -17,7 +17,7 @@ body {
 }
 
 .container {
-  background-color: #fff;
+  background: rgba(226, 226, 226, 0.7);
   border-radius: 30px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
   position: relative;
@@ -46,7 +46,7 @@ body {
 }
 
 .container button {
-  background-color: #512da8;
+  background-color: #0006b0;
   color: #fff;
   font-size: 12px;
   padding: 10px 45px;
@@ -66,7 +66,6 @@ body {
 }
 
 .container form {
-  background-color: #fff;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -132,7 +131,7 @@ body {
 }
 
 .social-icons a {
-  border: 1px solid #ccc;
+  border: 1px solid #0006b0;
   border-radius: 20%;
   display: inline-flex;
   justify-content: center;
@@ -160,9 +159,9 @@ body {
 }
 
 .toggle {
-  background-color: #512da8;
+  background-color: #0006b0;
   height: 100%;
-  background: linear-gradient(to right, #5c6bc0, #512da8);
+  background: linear-gradient(to right, #6392ff, #0006b0);
   color: #fff;
   position: relative;
   left: -100%;
@@ -206,4 +205,10 @@ body {
 
 .container.active .toggle-right {
   transform: translateX(200%);
+}
+
+.form-container.hidden {
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.6s ease-in-out;
 }/*# sourceMappingURL=style.css.map */
