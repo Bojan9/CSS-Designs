@@ -1,6 +1,6 @@
-# CSS-Designs
+# JavaScript & CSS Projects
 
-List of Designs made with HTML, CSS (SaSS / Tailwind CSS / Bootstrap) and JavaScript
+List of Projects and Designs made with HTML, CSS (SaSS / Tailwind CSS / Bootstrap) and JavaScript
 
 ## 01 Sign In / Sign Up Design
 
